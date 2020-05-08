@@ -1,0 +1,118 @@
+body{
+    padding:10px;
+    background-color: #ffff99;
+    
+    
+}
+
+#heading{
+    text-align:center;
+    
+}
+input{
+    color:#ff751a;
+    border-radius:5px;
+    border-color:#ffcccc;
+    width:250px;
+    height:70px;
+    padding:10px;
+    float:center;
+    font-size:40px;
+}
+    
+
+#k{
+   
+    background-color: #1a75ff;
+    border-radius:5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#Themes{
+    text-align: center;
+}
+   
+   
+   
+    footer {
+    background-color:#751aff;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+
+}
+#one{
+    
+       background-color:#3385ff;
+       ; /* Green */
+    border-radius:5px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    
+}
+#two{
+           background-color:    #a366ff;
+
+    border-radius:5px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#three{
+     background-color:rgb(170, 105, 0);      
+    border-radius:5px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#four{
+    
+ background-color:#7eedd9;
+     
+    border-radius:5px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#five{
+    background-color:#af0000;    
+    border-radius:5px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+
