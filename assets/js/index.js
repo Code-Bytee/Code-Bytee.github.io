@@ -1,6 +1,4 @@
-function alert(){
-  alert("code-breakery.github.io");
-}
-function dark(){
-  alert("Hello");
-}
+
+     $(window).on("load",function () {       
+				 $("#loader").fadeOut(1000);
+});

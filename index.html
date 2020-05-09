@@ -3,6 +3,10 @@
  <title>Blog by Anshul </title>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+       
+  
+
+
     <link rel="stylesheet" href="./assets/css/index.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
     <link rel="icon" href="/icon.png">
@@ -13,6 +17,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.js"></script>
     <script src="./assets/js/index.js"></script>
  </head>
+ <body>
+ <div id="loader"></div>  
  <div class="header">
 <h1 class="heading">Code-Breakery</h1>
   <h2 class="title">Blog by Anshul</h2>
@@ -27,10 +33,33 @@
   
   
   
-  <button class="fas fa-adjust" onclick="dark()"></button>
+  <button class="fas fa-adjust" onclick="theme()"></button>
+  <script>
+  function theme(){
+  var body = document.body;
+  body.classList.toggle("light");
+  $(".img").toggleClass(".imgb");
+  img();}
   
+  function img(){
+  				
+  				if ($("img").attr("src") == "./assets/img/GitHub.png"){
+  								$("img").attr("src","./assets/img/GitHub_Light.png");
+  								$("img").css("border","4px solid black");
+  								}
+  			else{
+  												$("img").attr("src","./assets/img/GitHub.png");
+  												$("img").css("border","4px solid white");
+  											
+  				
+  				
+  				
+  				
+  				
   
-
+}
+  }
+  </script>
 
 
 
