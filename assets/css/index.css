@@ -20,9 +20,13 @@ background: url('sprites.gif') 50% 50% no-repeat rgb(249,249,249);  }  
 				border:4px solid black;
 				}
 .header {
+<<<<<<< HEAD
 		
 	 vertical-align:top;
 	 margin:20px;
+=======
+  padding: 35px;
+>>>>>>> 5dba0e4bcda29ca732e7e6e1033ba29f48b2140b
   font-size: "Times New Roman", serif;
   text-align: center;
   margin-top: 2px;
