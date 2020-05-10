@@ -1,67 +1,64 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
- <title>Blog by Anshul </title>
+<title>Blog by Anshul </title>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-       
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
+  <link rel="icon" href="/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.js"></script>
+  <script src="./assets/js/index.js"></script>
+</head>
 
-
-    <link rel="stylesheet" href="./assets/css/index.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
-    <link rel="icon" href="/icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.js"></script>
-    <script src="./assets/js/index.js"></script>
- </head>
- <body>
- <div id="loader"></div>  
- <div class="header">
-<h1 class="heading">Code-Breakery</h1>
-  <h2 class="title">Blog by Anshul</h2>
-  
-</div>
-
-<a href="https://Code-Breakery.github.io">
-  <img src="./assets/img/GitHub.png" >
+<body>
+  <div id="loader"></div>  
+  <div class="header">
+    <h1 class="heading">Code-Breakery</h1>
+    <h2 class="title">Blog by Anshul</h2>
+  </div>
+  <a href="https://Code-Breakery.github.io">
+    <img src="./assets/img/GitHub.png">
   </a>
-  
-  
-  
-  
-  
   <button class="fas fa-adjust" onclick="theme()"></button>
+  
+  <div class="getStart">
+    <button class="btn">Get Started</button>
+    
+    
+  </div>
   <script>
-  function theme(){
-  var body = document.body;
-  body.classList.toggle("light");
-  $(".img").toggleClass(".imgb");
-  img();}
-  
-  function img(){
-  				
-  				if ($("img").attr("src") == "./assets/img/GitHub.png"){
-  								$("img").attr("src","./assets/img/GitHub_Light.png");
-  								$("img").css("border","4px solid black");
-  								}
-  			else{
-  												$("img").attr("src","./assets/img/GitHub.png");
-  												$("img").css("border","4px solid white");
-  											
-  				
-  				
-  				
-  				
-  				
-  
-}
-  }
+    function theme() {
+      var body = document.body;
+      body.classList.toggle("light");
+      $(".img").toggleClass(".imgb");
+      img();
+    }
+
+    function img() {
+
+      if ($("img").attr("src") == "./assets/img/GitHub.png") {
+        $("img").attr("src", "./assets/img/GitHub_Light.png");
+        $("img").css("border", "4px solid black");
+      }
+      else {
+        $("img").attr("src", "./assets/img/GitHub.png");
+        $("img").css("border", "4px solid white");
+
+
+
+
+
+
+
+      }
+    }
   </script>
-
-
-
 </body>
+
 </html>
