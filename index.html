@@ -8,16 +8,16 @@
     
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
-  <link rel="icon" href="/icon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Code-Breakery_Logo_Light.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.js"></script>
-  <script src="./assets/js/index.js"></script>
-</head>
-
 <body>
-  <div id="loader"></div>  
+  <div class="logo w3-center">
+  <h1>&lt/CB&gt</h1>
+  </div>
   <div class="header">
     <h1 class="heading">Code-Breakery</h1>
     <h2 class="title">Blog by Anshul</h2>
@@ -26,11 +26,8 @@
     <img src="./assets/img/GitHub.png">
   </a>
   <button class="fas fa-adjust" onclick="theme()"></button>
-  
   <div class="getStart">
     <button class="btn">Get Started</button>
-    
-    
   </div>
   <script>
     function theme() {
@@ -42,13 +39,13 @@
 
     function img() {
 
-      if ($("img").attr("src") == "./assets/img/GitHub.png") {
-        $("img").attr("src", "./assets/img/GitHub_Light.png");
-        $("img").css("border", "4px solid black");
+      if ($("a > img").attr("src") == "./assets/img/GitHub.png") {
+        $("a > img").attr("src", "./assets/img/GitHub_Light.png");
+        $("a >img").css("border", "4px solid black");
       }
       else {
-        $("img").attr("src", "./assets/img/GitHub.png");
-        $("img").css("border", "4px solid white");
+        $("a > img").attr("src", "./assets/img/GitHub.png");
+        $("a > img").css("border", "4px solid white");
 
 
 
