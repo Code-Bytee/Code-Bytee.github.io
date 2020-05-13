@@ -1,3 +1,5 @@
-$(window).on("load", function() {
-  $("#loader").fadeOut(1000);
+$(window).on('load', function() {
+  $('.loader').delay(100).fadeOut('slow', function() {
+    $(this).remove();
+  });
 });
