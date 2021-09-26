@@ -15,7 +15,7 @@
   <script src="./assets/js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.js"></script>
 <body>
-  <div class="logo w3-center">
+  <div class="logo">
   <h1>&lt/CB&gt</h1>
   </div>
   <div class="header">
@@ -27,7 +27,7 @@
   </a>
   <button class="fas fa-adjust" onclick="theme()"></button>
   <div class="getStart">
-    <button class="btn">Get Started</button>
+    <button class="btn" onclick="quote()">Quote App</button>
   </div>
   <script>
     function theme() {
@@ -35,6 +35,9 @@
       body.classList.toggle("light");
       $(".img").toggleClass(".imgb");
       img();
+    }
+    function quote(){
+      $("body").load('Quote.html');
     }
 
     function img() {
