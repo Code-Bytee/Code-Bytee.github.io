@@ -21,14 +21,17 @@ function typeWriter() {
 
     setTimeout(typeWriter, speed);
   }
+  else{
   document.getElementById("author").innerHTML =
+  
     quote.author;
+}
 }
 
 function getQuote() {
 
   if (i > 0) {
-
+    document.getElementById("author").innerHTML = "";
     document.getElementById("msg").innerHTML = "";
     i = 0;
   }
