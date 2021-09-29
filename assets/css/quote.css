@@ -6,7 +6,6 @@ body{
   width:97vw;
   height:60vh;
   display:flex;
-  text-align:left;
   align-items: center;
   border-radius:15px;
   overflow: hidden;
@@ -17,8 +16,12 @@ body{
   text-align: justify;
   letter-spacing: 1.px;
   position:relative;
-  font-family: 'Poppins', cursive;
+  
  
+}
+#msg{
+  font-family: 'Poppins', cursive;
+  text-align:left;
 }
 .box{
   margin:20px 30px;
@@ -58,6 +61,8 @@ footer:before{
 footer{
   position:reltative;
   line-height:3;
+  font-family:"Ephesis",cursive;
+  text-align:right;
  
 }
 
