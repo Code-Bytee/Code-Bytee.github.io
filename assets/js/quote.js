@@ -15,7 +15,7 @@ var HttpClient = function() {
   }
 }
 function typeWriter() {
-  alert(quote.content.length);
+ // alert(quote.content.length);
   if (quote.content.length < 79) {
     document.getElementById("msg").innerHTML += quote.content;
     
