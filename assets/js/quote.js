@@ -15,16 +15,18 @@ var HttpClient = function() {
   }
 }
 function typeWriter() {
-  if (i < quote.content.length) {
-    document.getElementById("msg").innerHTML += quote.content.charAt(i);
-    i++;
-
-    setTimeout(typeWriter, speed);
-  }
-  else{
-  document.getElementById("author").innerHTML =
+  alert(quote.content.length);
+  if (quote.content.length < 79) {
+    document.getElementById("msg").innerHTML += quote.content;
+    
+    document.getElementById("author").innerHTML =
   
     quote.author;
+
+  
+  }
+  else{
+  typeWriter();
 }
 }
 
@@ -33,7 +35,7 @@ function getQuote() {
   if (i > 0) {
     document.getElementById("author").innerHTML = "";
     document.getElementById("msg").innerHTML = "";
-    i = 0;
+   
   }
   client = new HttpClient();
   client.get("https://api.quotable.io/random", function(res) {
