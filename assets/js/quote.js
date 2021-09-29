@@ -1,6 +1,4 @@
 
-var i = 0;
-var speed = 25;
 var quote;
 var HttpClient = function() {
   this.get = function(url, aCallback) {
@@ -14,38 +12,45 @@ var HttpClient = function() {
     request.send(null);
   }
 }
-function typeWriter() {
- // alert(quote.content.length);
-  if (quote.content.length < 79) {
-    document.getElementById("msg").innerHTML += quote.content;
-    
-    document.getElementById("author").innerHTML =
   
-    quote.author;
-
-  
-  }
-  else{
-  typeWriter();
-}
-}
 
 function getQuote() {
+if(quote.content.length<200){
+console.log(quote.content.length)
+  document.getElementById("msg").innerHTML = quote.content;
+  document.getElementById('author').innerHTML = quote.author;
+}
+else{
 
-  if (i > 0) {
-    document.getElementById("author").innerHTML = "";
-    document.getElementById("msg").innerHTML = "";
-   
-  }
-  client = new HttpClient();
-  client.get("https://api.quotable.io/random", function(res) {
-    quote = JSON.parse(res);
-    //  alert(quote.content);
-    typeWriter();
-
-  });
-
-
+fetchQuote();
 
 }
-getQuote();
+
+  
+}
+function next(){
+  document.getElementById("msg").innerHTML = "";
+  document.getElementById("author").innerHTML = "";
+  fetchQuote();
+}
+function fetchQuote(){
+				
+
+client = new HttpClient();
+  client.get("https://api.quotable.io/random", function(res) {
+    quote = JSON.parse(res);
+    getQuote();
+   });   
+   }
+fetchQuote();
+//getQuote();
+
+ 
+
+
+  
+
+
+
+
+				
