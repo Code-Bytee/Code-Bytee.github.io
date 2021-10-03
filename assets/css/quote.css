@@ -3,9 +3,10 @@ body{
   height:100vh;
 }
 .container{
+  
   width:97vw;
   height:60vh;
-  display:flex;
+  display:none;
   align-items: center;
   border-radius:15px;
   overflow: hidden;
@@ -48,7 +49,8 @@ body{
 }
 footer:before{
   content:"-";
-  position: absolute;
+  
+  position: relative;
   opacity:0;
   left:1em;
   animation:fade 5s linear 2s 1 forwards;
