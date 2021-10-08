@@ -40,7 +40,7 @@ body {
 
 .heading {
   overflow: hidden;
-  border-right: 2px solid orange;
+  border-right: 2px solid dodgerblue;
   white-space: nowrap;
   font-family: "Times New Roman", serif;
   font-size: 10vw;
@@ -56,6 +56,10 @@ body {
 .title {
   font-family: 'Roboto Mono', monospace;
   font-size: 5vw;
+}
+.name{
+  font-family:"Ephesis",cursive;
+  color:orange;
 }
 
 
