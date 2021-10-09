@@ -36,6 +36,7 @@ function getQuote() {
   }
 
   function fetchQuote() {
+    console.log('Fetching Quote');
     client = new HttpClient();
     client.get("https://api.quotable.io/random", function(res) {
       quote = JSON.parse(res);
