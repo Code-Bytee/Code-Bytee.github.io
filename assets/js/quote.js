@@ -19,7 +19,7 @@ console.log('Theme : ' + themes[ran]);
 
 function getQuote() {
   if (quote.content.length < 200) {
-    console.log(quote.content.length)
+    console.log(quote.content)
     document.getElementById("msg").innerHTML = quote.content;
     document.getElementById('author').innerHTML = quote.author;
   }
@@ -44,4 +44,4 @@ function getQuote() {
     });
   }
   fetchQuote();
-  console.log(quote.content);
+ 

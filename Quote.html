@@ -11,12 +11,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
- <title>Quote</title>
+  <title>Quote</title>
 </head>
 
 <body>
   <div class="logo">
-    <h1>&lt/CB&gt</h1>
+    <h1>&lt<span class="mark">/CB</span>&gt</h1>
   </div>
   <div class="container pinkFish" onclick="next()">
     <div class="box">
@@ -24,8 +24,55 @@
       <footer id="author"></footer>
     </div>
   </div>
-    <script src="./assets/js/quote.js"></script>
- 
+  <script src="./assets/js/quote.js"></script>
+
+  <script>
+    
+    const mytimeOut = setTimeout(transform, 2000);
+
+    spell = ["A", 'N', 'S', 'H', 'U', 'L']
+    counter = 0
+
+    function transform() {
+      console.log('Interval')
+      myInterval = setInterval(edit,200);
+      // alert(el.textContent);
+    }
+      function edit() {
+        el = document.getElementsByClassName("mark")[0];
+        txt_length = el.innerText.length;
+        if (el.innerText.includes("C")) {
+
+
+          el.innerText = el.innerText.substr(0, txt_length - 1);
+
+        }
+        if (!el.innerText.includes('C') && !el.innerText.includes("L")) {
+
+          el.innerText = el.innerText + spell[counter]
+          if (counter < 5) {
+            counter++
+          }
+         else { clearInterval(myInterval)}
+
+        }
+
+
+
+
+      }
+     
+
+    
+
+
+    
+  </script>
+
+
+
+
+
 </body>
 
 </html>
